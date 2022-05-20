@@ -12,16 +12,22 @@ class Fakultas extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(border: Border.all()),
             padding: EdgeInsets.all(14),
-            child: Text("baris 1"),
+            child: Image.network(
+                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                height: 100),
           ),
           onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => RincianFakultas()));
             //gunakan navigator untuk panggil RincianFakultas
           },
         ),
         Container(
             decoration: BoxDecoration(border: Border.all()),
             padding: EdgeInsets.all(14),
-            child: Text("baris kedua")),
+            child: Image.network(
+                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                height: 100)),
       ]),
     );
   }

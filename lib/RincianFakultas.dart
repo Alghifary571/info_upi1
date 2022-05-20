@@ -9,7 +9,8 @@ class RincianFakultas extends StatelessWidget {
         title: const Text('Rincian Fakultas'),
       ),
       body: Center(
-        child: Text("rincian fakultas"),
+        child: Text(
+            "Fasilitas terbaru dari Fakultas FPMIPA yaitu Smart Classroom"),
       ),
     );
   }
